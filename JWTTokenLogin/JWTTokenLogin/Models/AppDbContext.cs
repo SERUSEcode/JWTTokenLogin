@@ -7,6 +7,7 @@ namespace JWTTokenLogin.Models
         public IConfiguration _config { get; set; }
         public AppDbContext(IConfiguration config)
         {
+            this.Database.EnsureCreated();
             _config = config;
         }
 
@@ -14,12 +15,17 @@ namespace JWTTokenLogin.Models
         {
             this.Database.EnsureCreated();
         }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
             optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
         }
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    base.OnConfiguring(optionsBuilder);
+        //    optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
+        //}
 
         public DbSet<User.UserModel> Users { get; set; }
         

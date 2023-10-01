@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace JWTTokenLogin.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231001105700_Add_Users_Table")]
-    partial class Add_Users_Table
+    [Migration("20231001121506_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -1,6 +1,7 @@
 using JWTTokenLogin.Models;
 using JWTTokenLogin.Models.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -10,7 +11,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddScoped<AppDbContext>();
+builder.Services.AddDbContext<AppDbContext>();
+builder.Services.AddDbContext<AppDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseConnection")));
+
+
 builder.Services.AddScoped<IUserRepository, DbUserRepository>();
 
 builder.Services.AddControllers();
