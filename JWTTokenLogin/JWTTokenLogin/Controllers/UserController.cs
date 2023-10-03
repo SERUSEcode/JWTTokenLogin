@@ -29,7 +29,9 @@ namespace JWTTokenLogin.Controllers
             var users = new UserModel()
             {
                 Username = username,
-                Password = password
+                Password = password,
+                UserMessage = "",
+                UserToken = ""
             };
 
             using (var db = new AppDbContext())

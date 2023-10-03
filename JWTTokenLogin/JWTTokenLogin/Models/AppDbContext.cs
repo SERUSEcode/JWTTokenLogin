@@ -4,22 +4,28 @@ namespace JWTTokenLogin.Models
 {
     public class AppDbContext : DbContext
     {
-        public IConfiguration _config { get; set; }
-        public AppDbContext(IConfiguration config)
+        public DbSet<User.UserModel> Users { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            this.Database.EnsureCreated();
-            _config = config;
+            optionsBuilder.UseSqlServer(
+                @"Server=(localdb)\mssqllocaldb;Database=JWTTokenLoginDb;Trusted_Connection=True");
         }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        { 
+        
+        }
+
+        
 
         public AppDbContext()
         {
             this.Database.EnsureCreated();
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    base.OnConfiguring(optionsBuilder);
+        //    optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
+        //}
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
@@ -27,7 +33,7 @@ namespace JWTTokenLogin.Models
         //    optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
         //}
 
-        public DbSet<User.UserModel> Users { get; set; }
+        
         
     }
 }
