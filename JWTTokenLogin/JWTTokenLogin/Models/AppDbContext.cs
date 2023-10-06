@@ -14,26 +14,9 @@ namespace JWTTokenLogin.Models
         { 
         
         }
-
-        
-
         public AppDbContext()
         {
             this.Database.EnsureCreated();
-        }
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    base.OnConfiguring(optionsBuilder);
-        //    optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
-        //}
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    base.OnConfiguring(optionsBuilder);
-        //    optionsBuilder.UseSqlServer(_config.GetConnectionString("DatabaseConnection"));
-        //}
-
-        
-        
+        }        
     }
 }

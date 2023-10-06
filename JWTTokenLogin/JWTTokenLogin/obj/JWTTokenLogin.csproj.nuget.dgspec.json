@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repo\\Mina_Projekt\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj": {}
+    "C:\\Users\\kevin\\Documents\\repos\\MyProjects\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj": {}
   },
   "projects": {
-    "C:\\Repo\\Mina_Projekt\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj": {
+    "C:\\Users\\kevin\\Documents\\repos\\MyProjects\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repo\\Mina_Projekt\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj",
+        "projectUniqueName": "C:\\Users\\kevin\\Documents\\repos\\MyProjects\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj",
         "projectName": "JWTTokenLogin",
-        "projectPath": "C:\\Repo\\Mina_Projekt\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj",
+        "projectPath": "C:\\Users\\kevin\\Documents\\repos\\MyProjects\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj",
         "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-        "outputPath": "C:\\Repo\\Mina_Projekt\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\obj\\",
+        "outputPath": "C:\\Users\\kevin\\Documents\\repos\\MyProjects\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

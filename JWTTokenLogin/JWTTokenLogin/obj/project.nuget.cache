@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u7QKitlcB387Ihu+0yqwQDmyUPSfseysbJLlKwy380MpzD7R1VC4n0+msE00diaCe9qyTDVwS4LI/07Gnsq2yg==",
+  "dgSpecHash": "j6u3ZWGgn5nX2v+gumbU/SbIril6h/why4HDIUn0RVs4/NWqtL4stXL5+YQoMpMGhUOnDBd+mREzhLHg8CWwfA==",
   "success": true,
-  "projectFilePath": "C:\\Repo\\Mina_Projekt\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj",
+  "projectFilePath": "C:\\Users\\kevin\\Documents\\repos\\MyProjects\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin\\JWTTokenLogin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kevin\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\kevin\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

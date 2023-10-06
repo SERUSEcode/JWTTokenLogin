@@ -1,4 +1,5 @@
 using JWTTokenLogin.Models;
+using JWTTokenLogin.Models.User;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +14,12 @@ namespace JWTTokenLogin.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly IUserRepository _UserRepository;
 
-        public AuthenticationController(IConfiguration configuration)
+        public AuthenticationController(IConfiguration configuration, IUserRepository userRepository)
         {
             _configuration = configuration;
+            this._UserRepository = userRepository;
         }
 
         [Route("TestToken")]
@@ -33,7 +36,10 @@ namespace JWTTokenLogin.Controllers
         //Creates a token if with the right username and password
         public object Authenticate(string UserName, string Password)
         {
-                if (UserName == "test" && Password == "123")
+            var user = _UserRepository.CheckUser(UserName, Password);
+
+
+            if (user != null)
                 {
                     var claims = new List<Claim>();
                     claims.Add(new Claim("Username", "test"));
@@ -58,7 +64,7 @@ namespace JWTTokenLogin.Controllers
                 };
             }
 
-            return Ok("Username or password is wrong, please try again with username test and password 123");
+            return Ok("Username or password is wrong.");
         }
     
     //Creates the acuall token
