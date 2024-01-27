@@ -2,11 +2,10 @@
 Short showcase on how to use JWT Tokens for Login
 
 
-*To start*
+**To start**
 
--Download git code
--Open project with Visual Studio 2022
--Open packadge manager
--Write Update-Database
--Start project with IIS Express
--Enjoy
+1. Download git code
+2. Open project with Visual Studio 2022
+3. Open package manager
+4. Start project with IIS Express
+5. Enjoy
